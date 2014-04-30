@@ -32,3 +32,23 @@ a:hover  {
 	font-size: 20pt;
 	font-weight: bold;
 }
+
+#batman  {
+	color: black;
+}
+
+#nightwing  {
+	color: red;
+}
+
+#green  {
+	color: green;
+}
+
+#deadpool  {
+	color: darkred;
+}
+
+#wolverine  {
+	color: yellow;
+}
