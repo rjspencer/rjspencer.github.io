@@ -1,0 +1,54 @@
+#style.css
+
+body  {
+	background: #d8dee0;
+    font-family: adamina, georgia, arial;
+    font-size: 12pt;
+    
+}
+
+h1, h2, h3, h4, h5, h6  {
+	color: #ff472e;
+}
+
+p  {
+	color: #4f8aff;
+}
+
+a  {
+	color: #ffd999;
+}
+
+a:hover  {
+	color: #ff472e;
+	text-decoration: none;
+}
+
+.header  {
+	background-color: #4f8aff;
+	height: 100px;
+	width: 100%;
+	top: 0px;
+	font-size: 20pt;
+	font-weight: bold;
+}
+
+#batman  {
+	color: black;
+}
+
+#nightwing  {
+	color: red;
+}
+
+#green  {
+	color: green;
+}
+
+#deadpool  {
+	color: darkred;
+}
+
+#wolverine  {
+	color: yellow;
+}
