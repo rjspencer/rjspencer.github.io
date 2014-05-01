@@ -11,7 +11,7 @@
 
 
 body  {
-	background: #DDDDDD;
+	background: #ddd;
 	font: georgia, trebuchet;
 	font-size: 12pt;
 	color: charcoal;
@@ -32,6 +32,8 @@ a:hover  {
 
 h3  {
     color: #336688;
+    font-size: 20pt;
+
 }
 
 #header  {
@@ -80,34 +82,42 @@ h3  {
 }
 
 .post  {
-	height: auto;
+	position: static;
+	border: 5 px solid #666;
 	margin-top: 10px;
-	margin-bottom: 10px;
-	padding-bottom: 20px;
-	border-top: 1px solid #666;
-	border-bottom: 1 px solid #666;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
 	overflow: hidden;
-	transition: all 0.3s linear;
-
 }
 
-.post .collapsed  {
-	min-height: 40px;
-	height: 40px;
+.post_text  {
+	height: auto;
+	overflow: auto;
+}
+
+p  {
+    position: relative;
+    left: 10px;
+}
+
+.collapsed  {
+	min-height: 140px;
+	height: 140px;
+	overflow: hidden;
 }
 
 .read_more  {
 	position: relative;
-	bottom: 0px;
-	left: 0px;
+	bottom: -10px;
+	left: 10px;
 	color: #336688;
 
 }
 
 .read_less  {
 	position: relative;
-	bottom: 0px;
-	left: 0px;
+	bottom: -10px;
+	left: 10px;
 	color: #336688;
 	
 }
