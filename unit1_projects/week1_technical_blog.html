@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DBC 2 - Phase 0 - Unit 1</title>
+
+	<link rel="stylesheet" type="text/css" href="stylesheets/dbc2.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.read_less').hide();
+
+			$('.read_more').click( function() ) {
+				$(this).parent().toggleClass('collapsed');
+				$(this).closest('.read_less').show();
+				$(this).hide()
+			}
+
+			$('.read_less').click( function() ) {
+				$(this).parent().toggleClass('collapsed');
+				$(this).closest('.read_more').show();
+				$(this).hide()
+			}
+   			
+
+		});
+	</script>
+
+</head>
+<body>
+	<div id="header">
+        <div id="logo">
+        R.J. Spencer
+        </div>
+	</div>
+<div id="main">
+	<div id="content">
+		<div class="collapsed post">
+			<h3>TITLE</h3>
+			<p>Lorem ipsum dolor sit amet, at vix nostrud accusamus definitionem, alii liber cu his, sed ea commodo adipisci delicatissimi. Soleat mandamus vis in, qui ei quis vituperata quaerendum, ea vim iisque facilisi. Ea vim doming minimum. Est tota tritani cotidieque id. Eos ex erat persecuti.</p>
+			<span class="read_more">Read more...</span>
+			<span class="read_less">Read less...</span>
+		</div>
+		<div class="collapsed post">
+			<h3>TITLE</h3>
+			<p>Lorem ipsum dolor sit amet, at vix nostrud accusamus definitionem, alii liber cu his, sed ea commodo adipisci delicatissimi. Soleat mandamus vis in, qui ei quis vituperata quaerendum, ea vim iisque facilisi. Ea vim doming minimum. Est tota tritani cotidieque id. Eos ex erat persecuti.</p>
+			<span class="read_more">Read more...</span>
+			<span class="read_less">Read less...</span>
+		</div>
+	</div>
+
+	<div id="sidebar">
+		<div class="sidebox">
+			<span class="sidebox_link" ><a href="">LINK</a></span>
+			<span class="sidebox_link" ><a href="">LINK</a></span>
+		</div>
+	</div>
+   
+</div>
+    <div class="break"> </div>
+	<div id="footer">
+	<span id="copyright">Created by <a href="mailto:rjspencer82@gmail.com">Ryan J Spencer</a> - Copyright &copy 2014</span>
+	</div>
+</body>
+</html>
