@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DBC 2 - Phase 0 - Unit 1</title>
+
+	<link rel="stylesheet" type="text/css" href="stylesheets/dbc2.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.read_less').hide();
+			$('.read_more').click( function()  {
+				$(this).siblings('.read_less').show();
+				$(this).siblings('.post_text').toggleClass('collapsed');
+				$(this).hide();
+                
+			});
+
+			$('.read_less').click( function()  {
+				$(this).siblings('.read_more').show();
+				$(this).siblings('.post_text').toggleClass('collapsed');
+				$(this).hide();
+			});
+            
+		});
+	</script>
+
+</head>
+<body>
+	<div id="header">
+        <div id="logo">
+        R. J. Spencer
+        </div>
+	</div>
+<div id="main">
+	<div id="content">
+		<div class="post">
+			<div class="collapsed post_text">
+				<h3>Exercise 1</h3>
+                <p>Adjectives for the happiest moments of my life...</p>
+                <ul>
+                	<li>Accomplishment</li>
+                	<li>Commitment</li>
+                	<li>Challenge</li>
+                	<li>Will Power</li>
+                	<li>Leadership</li>
+                </ul>
+			</div>
+			<span class="read_more">Read more...</span>
+			<span class="read_less">Read less...</span>
+		</div>
+		<div class="post">
+			<div class="collapsed post_text">
+				<h3>Exercise 2</h3>
+                <p>Commitment.  Its vital to marriage, friendship, leadership, and self-worth.  Its about trusting in your own decisions, understanding that giving your self to another makes your combined unit strong than one plus one, giving those that follow you something to believe in, and building your self confidence.</p>
+                
+			</div>
+			<span class="read_more">Read more...</span>
+			<span class="read_less">Read less...</span>
+		</div>		
+		<div class="post">
+			<div class="collapsed post_text">
+				<h3>Exercise 3</h3>
+				<p>Accomplishment.  <b>3/5</b>.  Personally its more like a 4 1/2.  Professionally, I am a 2.</p>
+				<p>Commitment.  <b>4/5</b>.  I nail the important stuff.  Unfortunately, I tend to say yes to little things and then fail to find time for them.</p>
+				<p>Challenge.  <b>4/5</b>.  I seek out challenge.  I signed up for this right?</p>
+				<p>Will Power.  <b>4/5</b>.  Cookies are my weakness.</p>
+                <p>Leadership.  <b>5/5</b>.  I always set a positive example and take time with my students to explain why, no matter what the topic is and I challenge them to be better.</p>
+                
+			</div>
+			<span class="read_more">Read more...</span>
+			<span class="read_less">Read less...</span>
+		</div>	
+		<div class="post">
+			<div class="collapsed post_text">
+				<h3>Exercise 4</h3>
+				<p>I'm not great at asking for advice.  I am too proud of my brain and think I can figure everything out myself.  I have sought out advice on my recent choice of a career change, but didn't really listen to anyone.</p>
+                
+			</div>
+			<span class="read_more">Read more...</span>
+			<span class="read_less">Read less...</span>
+		</div>	
+
+	</div>
+
+	<div id="sidebar">
+		<div class="sidebox">
+            <h4>WEEK 1 PROJECTS</h4>
+			<ul>
+				<li><a href="week1_cultural_blog.html">Cultural Blog</a></li>
+                <li><a href="week1_technical_blog.html">Tech Blog</a></li>
+                <li><a href="dbc2.html">DBC 2</a></li>
+                <li><a href="dbc1.html">DBC 1</a></li>
+            </ul>
+		</div>
+        <div class="sidebox">
+		<h4>ABOUT ME</h4>
+            <p>Ready to get my Dev Bootcamp on!</p>
+		</div>
+	</div>
+   
+</div>
+    <div class="break"> </div>
+	<div id="footer">
+	<span id="copyright">Created by <a href="mailto:rjspencer82@gmail.com">Ryan J Spencer</a> - Copyright &copy 2014</span>
+	</div>
+</body>
+</html>

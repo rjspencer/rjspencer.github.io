@@ -1,0 +1,204 @@
+# dbc2.css
+# Ryan J Spencer
+#
+#	Charcoal #3333333
+#	Mid Grey  #666666
+#	Light Grey #999999
+#	Off White  #DDDDDD
+#	Orange  #FF9900
+#	Blue  #336688
+#	Yellow  #FFCC00
+
+
+body  {
+	background: #ddd;
+	font: georgia, trebuchet;
+	font-size: 12pt;
+	color: charcoal;
+}
+
+img  {
+	border: 2px solid #999;
+    float: right;
+    margin: 10px;
+}
+
+a  {
+	text-decoration: none;
+    color: #FF9900;
+}
+
+a:hover  {
+
+}
+
+h3  {
+    color: #336688;
+    font-size: 20pt;
+}
+
+h4  {
+    color: #ddd;
+    font-size: 10pt;
+    text-align: center;
+    background: #336688;
+    width: 100%;
+}
+
+#header  {
+	background: #333;
+	border-bottom: 5px solid #336688;
+	color: #DDD;
+	position: fixed;
+	z-index: 50;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 60px;
+
+}
+
+#logo   {
+    z-index: 60;
+    color: #DDD;
+    font-size: 40px;
+    font-weight: bold;
+    
+    position: relative;
+    top: 23px;
+    left: 50px;
+    
+    text-shadow: 0px 2px 2px #666;
+}
+
+#main  {
+	position: relative;
+	top: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 850px;
+	min-height: 500px;
+    overflow: auto;
+}
+
+#content  {
+	position: static;
+	float: left;
+	width:620px;
+	margin: 10px;
+	padding: 0px;
+    
+}
+
+.post  {
+	position: static;
+	border: 5 px solid #666;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	overflow: hidden;
+}
+
+.post_text  {
+	height: auto;
+	overflow: auto;
+}
+
+p  {
+    position: relative;
+    left: 10px;
+}
+
+.collapsed  {
+	min-height: 140px;
+	height: 140px;
+	overflow: hidden;
+}
+
+.read_more  {
+	position: relative;
+	bottom: -10px;
+	left: 10px;
+	color: #336688;
+
+}
+
+.read_less  {
+	position: relative;
+	bottom: -10px;
+	left: 10px;
+	color: #336688;
+	
+}
+
+.imgbox  {
+	float: left;
+    margin: 5px;
+    margin-left: -10px;
+}
+
+.imgtext  {
+    position: relative;
+    left: 190px;
+    bottom: 50px;
+    background: #333;
+    border: 1px solid #999;
+    color: #DDD;
+    height: 20px;
+    min-width: 120px;
+    padding: 5px;
+    
+}
+
+#sidebar  {
+	position: static;
+	float: right;
+	width: 200px;
+	margin: 10px;
+	margin-left: 0px;
+	padding: 0px;
+    
+}
+
+.sidebox  {
+	border: 1px solid #999;
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+    min-height: 100px;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 5px #333;
+}
+
+.sidebox_link:h4  {
+    margin: 5px;
+    padding-left: 10px;   
+}
+
+.sidebox_link  {
+    clear: both;
+}
+
+#footer  {
+	border-top: 1px solid #666;
+	position: relative;
+    top: 60px;
+    text-align:center;
+    padding: 10px;
+}
+
+#copyright  {
+	color: #666;
+	font-size: 14pt;
+}
+
+a #copyright  {
+    color: #666;
+}
+
+a:hover #copyright  {
+    color: #666;
+}
+
+.break  {
+    clear: left;
+}
