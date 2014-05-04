@@ -13,13 +13,26 @@
 	<script>
 		$(document).ready(function(){
 			//determine site url, cut off page, set to variable
-            var base_url = window.location.pathname;
-            base_url = base_url.substring(0, base_url.lastIndexOf('/'));
-            $('nav').load(base_url+'/nav.txt');            
+            var full_url = window.location.pathname;
+            var base_url = full_url.substring(0, full_url.lastIndexOf('/'));
+                     
             
             $('.read_less').hide();
-                        
-			$('.read_more').click( function()  {
+            $('article').detach(); 
+            $('#social').after('<article></article>');
+            $('nav').load(base_url+'/nav.txt');
+            
+            $('nav').click( function()  {
+                var post_url = '/' + window.location.hash.substring(1, window.location.hash.length);
+                   
+                alert(post_url);
+				$('article').load(base_url+post_url);
+                
+			});
+            
+			
+            
+            $('.read_more').click( function()  {
 				$(this).siblings('.read_less').show();
 				$(this).siblings('.post_text').toggleClass('collapsed');
 				$(this).hide();
