@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+	<title>DBC 2 - Phase 0 - Unit 1</title>
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.read_less').hide();
+			$('.read_more').click( function()  {
+				$(this).siblings('.read_less').show();
+				$(this).siblings('.post_text').toggleClass('collapsed');
+				$(this).hide();
+                
+			});
+
+			$('.read_less').click( function()  {
+				$(this).siblings('.read_more').show();
+				$(this).siblings('.post_text').toggleClass('collapsed');
+				$(this).hide();
+			});
+            
+            $(window).scroll(function() {
+                if($(window).scrollTop() > 0) {
+                    $('header').addClass('scrolled');
+                    $('#social').addClass('scrolled');
+                } else {
+                    $('header').removeClass('scrolled');
+                    $('#social').removeClass('scrolled');
+                }
+            });
+            
+            
+		});
+	</script>
+
+</head>
+<body>
+	<header>
+        <div id="logo">
+        R. J. Spencer
+        </div>
+	</header>
+    <div class="header_space"></div>
+    <div id="social">
+        <a href="https://twitter.com/ryanjoelspencer" target="_blank">&#xf081;<!--twitter--></a>
+        <a href="http://google.com/+RyanSpencerPlus" target="_blank">&#xf0d4;<!--google+--></a>
+        <a href="https://github.com/rjspencer" target="_blank">&#xf09b;<!--github--></a>
+        <a href="mailto:rjspencer82@gmail.com">&#xf0e0;<!--mail--></a>
+    </div>
+    <article>
+        <div class="collapsed post_text">
+            <h3>Site Review - Engadget</h3>
+            <img src="images/engadget.png" />
+            <p>I enjoy the relevant tech articles on <a href="http://engadget.com">Engadget.com</a>.  I can almost always find something worth reading.  They do an excellent job of covering a wide range of tech stories while balancing between not being too technical nor too topical.  I feel if I only read this blog, I would still have a good grasp of current and upcoming consumer tech.
+            </p>
+            <p>The site starts with 5 images, each for a different major story.  These stories revolve slower than the chronological blog postings below.  These images draw the eye to their best reads and save the user from searching.  The linear posting method with the highlights at the top makes it an easy site to use.  Though I have rarely used it, a thin persistant bar at the top contains a search box.
+            </p>
+            <img src="images/WFengadget400.jpg" />
+            <p>Engadget is a modern, sleek design with a lot of white space.  Calm blue is able to draw attention to needed elements when contrasted against the white and greys of the rest of the design.
+            </p>
+            <p>Engadget is an ad supported site.  They have a relatively low number of ads.</p>
+        </div>
+        <span class="read_more">Read more...</span>
+        <span class="read_less">Read less...</span>
+    </article>
+    <article>
+        <div class="collapsed post_text">
+            <h3>Site Review - Woot!</h3>
+            <img src="images/woot.png" />
+            <p><a href="http://woot.com" target="blank">Woot!</a> is a deals site that has been around forever in internet terms.  I have found many good deals on this site from shoes to a desktop computer.</p>
+            <p>The woot! deals are only listed for a few days, or sometimes just hours.  They utilize some diagonal crops on their product photos to enhance the sense of urgency.  Woot feels like an ecommerce site with energetic yellow and lots of green means go.  It has a soft roundness to the fonts used which seem to be more trustworthy.  Generally, I spend short amounts of time on woot.  I check for a deal and move on.  They make the site fast to browse to promote frequent visits.</p>
+            <img src="images/WFwoot400.jpg" />
+            <p>Unlike sites like amazon, woot has a limited number of products which makes navigation easy.  They waste less space on navigation.</p>
+        </div>
+        <span class="read_more">Read more...</span>
+        <span class="read_less">Read less...</span>
+    </article>
+    <article>
+        <div class="collapsed post_text">
+            <h3>Site Review - Spoon Graphics</h3>
+            
+            <p><a href="http://blog.spoongraphics.com" target="blank">Chris Spooner</a> has taught me more about graphic design than anyone else, and I have never met him.  He lives on the other side of the ocean. </p> 
+            <img src="images/spoon.png" />
+            <p>Chris does an excellent job of concisely describing techniques paired with screenshots.  I much prefer photos with steps to videos.  Why do I have to sit through a one minute description of why you made the video everytime I pop up youtube?  I don't care about your lunch, tell me how to accomplish the task.</p>
+            <p>Chris's site is muted earthtones which causes his artwork to pop.  It is an elegant look with a nod to the old print world.</p>
+            <p>Most visitor to the site are either subscribers checking out the latest post or googlers that land in a specific tutorial page based on what they searched for.  The navigation system is more about stumbling upon other projects you did not expect rather that a specific path.  It works well for the site since few people would arrive at the home page wanting to learn a specific skill.</p>
+            <img src="images/WFspoongraphics400.jpg" />
+            <p>sThis site is funded by ads, and they are well integrated into the site.  Chris seems to pick specific advertisers that actually have relevance.  As a user I appreciate this and probably click through ads more often here than on most sites.</p>
+        </div>
+        <span class="read_more">Read more...</span>
+        <span class="read_less">Read less...</span>
+    </article>
+
+	<nav>
+        <h4>WEEK 1 PROJECTS</h4>
+        <ul>
+            <li><a href="week1_cultural_blog.html">Cultural Blog</a></li>
+            <li><a href="week1_technical_blog.html">Tech Blog</a></li>
+            <li><a href="dbc2.html">DBC 2</a></li>
+            <li><a href="dbc1.html">DBC 1</a></li>
+        </ul>
+	</nav>
+   
+	<footer>
+	<span id="copyright">Created by <a href="mailto:rjspencer82@gmail.com">Ryan J Spencer</a> - Copyright &copy 2014</span>
+	</footer>
+</body>
+</html>

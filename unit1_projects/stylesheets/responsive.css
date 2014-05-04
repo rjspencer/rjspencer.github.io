@@ -4,10 +4,11 @@
 #	Charcoal #3333333
 #	Mid Grey  #666666
 #	Light Grey #999999
-#	Off White  #DDDDDD
-#	Orange  #FF9900
+#	Off White  #fefeff
+#	Orange  #f09811
 #	Blue  #336688
 #	Yellow  #FFCC00
+
 
 /* style reset */
 html, body, div, span, applet, object, iframe,
@@ -54,8 +55,8 @@ q:before, q:after {
 
 
 body  {
-	background: #ddd;
-	font-family: 'Raleway', sans-serif;
+	background: #fefeff;
+	font-family: arial, sans-serif;
 	font-size: 12pt;
 	color: charcoal;
 }
@@ -68,7 +69,7 @@ img  {
 
 a  {
 	text-decoration: none;
-    color: #FF9900;
+    color: #f09811;
 }
 
 a:hover  {
@@ -76,19 +77,23 @@ a:hover  {
 }
 
 h3  {
+    font-family: 'Volkhov', serif;
     color: #336688;
-    font-size: 20pt;
+    font-size: 1.8em;
 }
 
 h4  {
+    font-family: 'Volkhov', serif;
     color: #ddd;
-    font-size: 10pt;
+    font-size: 1em;
+    padding: 2px;
     text-align: center;
     background: #336688;
     width: 100%;
 }
 
 header  {
+    font-family: 'Volkhov', serif;
 	background: #333;
 	border-bottom: 5px solid #336688;
 	color: #DDD;
@@ -98,53 +103,61 @@ header  {
 	left: 0px;
 	width: 100%;
 	height: 60px;
+    font-size: 12pt;
 
+}
+
+.header_space  {
+    position: static;
+    width: 100%;
+    height: 60px;
+}
+
+.scrolled  {
+    font-size: 8pt;
+    height: 40px;
+}
+
+#social  {
+    font-family: FontAwesome;
+    font-size: 2em;
+    color: #fefeff;
+    position: fixed;
+    top: 10px;
+    right: 30px;
+    z-index: 70; 
+}
+
+#social a  {
+    padding-right: .5em;
 }
 
 #logo   {
     z-index: 60;
     color: #DDD;
-    font-size: 40px;
+    font-size: 2.55em;
     font-weight: bold;
-    
     position: relative;
-    top: 23px;
+    top: .6em;
     left: 50px;
-    
     text-shadow: 0px 2px 2px #666;
 }
 
-#main  {
-	position: relative;
-	top: 60px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 850px;
-	min-height: 500px;
-    overflow: auto;
-}
-
-#content  {
+article  {
 	position: static;
-	float: left;
-	width:620px;
-	margin: 10px;
-	padding: 0px;
-    
-}
-
-.post  {
-	position: static;
+    width: 70%;
 	border: 5 px solid #666;
-	margin-top: 10px;
-	margin-bottom: 20px;
-	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 10px;
 	overflow: hidden;
 }
 
 .post_text  {
 	height: auto;
-	overflow: auto;
+    overflow-x: hidden;
+	overflow-y: auto;
 }
 
 p  {
@@ -193,28 +206,19 @@ p  {
     
 }
 
-#sidebar  {
-	position: static;
-	float: right;
-	width: 200px;
-	margin: 10px;
-	margin-left: 0px;
-	padding: 0px;
-    
-}
-
-.sidebox  {
+nav  {
+	position: fixed;
+	top: 70px;
+    right: 10px;
+	width: 20%;
+	padding: 10px;
+	padding-left: 0px;
+    padding-bottom: 20px;
 	border: 1px solid #999;
 	border-bottom-right-radius: 10px;
 	border-top-left-radius: 10px;
     min-height: 100px;
-    margin-bottom: 20px;
     box-shadow: 3px 3px 5px #333;
-}
-
-.sidebox_link:h4  {
-    margin: 5px;
-    padding-left: 10px;   
 }
 
 .sidebox_link  {
@@ -242,6 +246,75 @@ a:hover #copyright  {
     color: #666;
 }
 
-.break  {
-    clear: left;
+#social  {
+    font-family: FontAwesome;
+    font-size: 2.5em;
+    position: fixed;
+    top: 10px;
+    right: 30px;
+    z-index: 70; 
 }
+
+#social a  {
+    padding-right: .5em;
+    color: #fefeff;
+}
+
+#social a:hover  {
+    text-shadow: 1px 1px 8px #f09811;
+    color: #ddd;
+    top: 12px;
+}
+
+#social.scrolled  {
+    font-size: 1.6em;
+}
+
+@media screen and (max-width: 650px)  {
+
+    #social  {
+        position: static;
+        width: 100%;
+        background: #999999;
+        border-bottom: 1px #666666;
+        text-align: center;
+    }
+    #social a  {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    img  {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px)  {
+    article img  {
+        float: center;
+        clear: both;
+        max-width: 90%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 850px)  {
+    nav  {
+        width: 95%;
+        margin: 0 auto;
+        position: relative;
+        border: 0px;
+        padding: 0px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    article  {
+        width: 95%;
+        margin: 0 auto;
+        padding: 0px;
+        padding-bottom: 10px;
+        
+    }
+    
+}
+
