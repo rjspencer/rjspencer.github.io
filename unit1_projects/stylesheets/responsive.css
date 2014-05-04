@@ -104,6 +104,7 @@ header  {
 	width: 100%;
 	height: 60px;
     font-size: 12pt;
+    margin: 0px;
 
 }
 
@@ -166,8 +167,8 @@ p  {
 }
 
 .collapsed  {
-	min-height: 140px;
-	height: 140px;
+	min-height: 200px;
+	height: 200px;
 	overflow: hidden;
 }
 
@@ -270,34 +271,6 @@ a:hover #copyright  {
     font-size: 1.6em;
 }
 
-@media screen and (max-width: 650px)  {
-
-    #social  {
-        position: static;
-        width: 100%;
-        background: #999999;
-        border-bottom: 1px #666666;
-        text-align: center;
-    }
-    #social a  {
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-    
-    img  {
-        max-width: 90%;
-    }
-}
-
-@media screen and (max-width: 480px)  {
-    article img  {
-        float: center;
-        clear: both;
-        max-width: 90%;
-        height: auto;
-    }
-}
-
 @media screen and (max-width: 850px)  {
     nav  {
         width: 95%;
@@ -313,8 +286,43 @@ a:hover #copyright  {
         margin: 0 auto;
         padding: 0px;
         padding-bottom: 10px;
-        
     }
     
 }
+
+@media screen and (max-width: 650px)  {
+
+    #social  {
+        position: static;
+        width: 110%;
+        background: #999999;
+        border-bottom: 2px solid #666;
+        text-align: center;
+        padding: 0px;
+        margin: 0 auto;
+    }
+    #social a  {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    img  {
+        max-width: 90%;
+    }
+    .collapsed  {
+        min-height: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 480px)  {
+    article img  {
+        float: center;
+        clear: both;
+        max-width: 90%;
+        height: auto;
+    }
+}
+
+
 
