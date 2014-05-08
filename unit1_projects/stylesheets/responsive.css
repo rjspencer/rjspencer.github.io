@@ -56,6 +56,7 @@ q:before, q:after {
 
 body  {
 	background: #fefeff;
+    background-image: url('../images/blueGrid.gif') repeat-y;
 	font-family: arial, sans-serif;
 	font-size: 12pt;
 	color: charcoal;
@@ -84,11 +85,12 @@ h3  {
 
 h4  {
     font-family: 'Volkhov', serif;
-    color: #ddd;
+    color: #336688;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
     font-size: 1em;
-    padding: 2px;
+    padding: 5px;
     text-align: center;
-    background: #336688;
     width: 100%;
 }
 
@@ -105,13 +107,14 @@ header  {
 	height: 60px;
     font-size: 12pt;
     margin: 0px;
+    box-shadow: 0 2px 2px #999;
 
 }
 
 .header_space  {
     position: static;
     width: 100%;
-    height: 60px;
+    height: 58px;
 }
 
 .scrolled  {
@@ -190,7 +193,7 @@ p  {
 
 .imgbox  {
 	float: left;
-    margin: 5px;
+    margin: 10px;
     margin-left: -10px;
 }
 
@@ -209,17 +212,28 @@ p  {
 
 nav  {
 	position: fixed;
-	top: 70px;
+	top: 60px;
     right: 10px;
 	width: 20%;
 	padding: 10px;
 	padding-left: 0px;
     padding-bottom: 20px;
-	border: 1px solid #999;
-	border-bottom-right-radius: 10px;
-	border-top-left-radius: 10px;
+	#border: 1px solid #999;
+	#border-bottom-right-radius: 10px;
+	#border-top-left-radius: 10px;
     min-height: 100px;
-    box-shadow: 3px 3px 5px #333;
+    
+    
+}
+
+.border-bottom  {
+    background: url('../images/blueGrid.gif') repeat;
+    background-size: 18px 18px;
+    height: 18px;
+    width: 100%;
+    border: 1px solid #336688;
+    border-radius 8px;
+    box-shadow: 0 2px 2px #999;
 }
 
 .sidebox_link  {
@@ -304,6 +318,11 @@ a:hover #copyright  {
         padding: 0px;
         padding-bottom: 10px;
     }
+    footer  {
+        border: none;
+        top: 80px;
+
+    }
     
 }
 
@@ -311,7 +330,7 @@ a:hover #copyright  {
 
     #social  {
         position: static;
-        width: 110%;
+        width: auto;
         background: #999999;
         border-bottom: 2px solid #666;
         text-align: center;
@@ -330,6 +349,7 @@ a:hover #copyright  {
         min-height: 150px;
         height: 150px;
     }
+
 }
 
 @media screen and (max-width: 480px)  {
@@ -339,7 +359,7 @@ a:hover #copyright  {
         max-width: 90%;
         height: auto;
     }
-}
 
+}
 
 
