@@ -7,22 +7,32 @@
 <![endif]-->
 	<title>DBC 2 - Phase 0 - Unit 1</title>
     <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script>
 		$(document).ready(function(){
 			//determine site url, cut off page, set to variable
-            var base_url = window.location.pathname;
-            base_url = base_url.substring(0, base_url.lastIndexOf('/'));
-            
-            $.get(base_url+'/nav.txt', function( links ) {
-                $('nav').prepend(links);            
-            });
+            var full_url = window.location.pathname;
+            var base_url = full_url.substring(0, full_url.lastIndexOf('/'));
+                     
             
             $('.read_less').hide();
-                        
-			$('.read_more').click( function()  {
+            $('article').detach(); 
+            $('#social').after('<article></article>');
+            $('nav').load(base_url+'/nav.txt');
+            
+            $('nav').click( function()  {
+                var post_url = '/' + window.location.hash.substring(1, window.location.hash.length);
+                   
+                alert(post_url);
+				$('article').load(base_url+post_url);
+                
+			});
+            
+			
+            
+            $('.read_more').click( function()  {
 				$(this).siblings('.read_less').show();
 				$(this).siblings('.post_text').toggleClass('collapsed');
 				$(this).hide();
@@ -108,7 +118,7 @@
     </article>
 
 	<nav>
-    <div class="border-bottom"></div>    
+        
 	</nav>
    
 	<footer>
