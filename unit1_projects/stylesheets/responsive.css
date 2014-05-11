@@ -7,7 +7,11 @@
 #	Off White  #fefeff
 #	Orange  #f09811
 #	Blue  #336688
-#	Yellow  #FFCC00
+#	Yellow  #
+
+#   light red #FF9073  #FF3500
+#   light yellow #FFE373  #FFCD00
+#   light green #B5F36D  #7CE700    
 
 
 /* style reset */
@@ -37,11 +41,18 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
+html  {
+    font-size: 62.5%;
+
+}
+
 body {
 	line-height: 1;
 }
 ol, ul {
 	list-style: none;
+    padding: 0;
+    margin: 0;
 }
 blockquote, q {
 	quotes: none;
@@ -58,7 +69,7 @@ body  {
 	background: #fefeff;
     background-image: url('../images/blueGrid.gif') repeat-y;
 	font-family: arial, sans-serif;
-	font-size: 12pt;
+	font-size: 1.6rem;
 	color: charcoal;
 }
 
@@ -80,16 +91,18 @@ a:hover  {
 h3  {
     font-family: 'Volkhov', serif;
     color: #336688;
-    font-size: 1.8em;
+    font-size: 1.8rem;
 }
 
 h4  {
     font-family: 'Volkhov', serif;
     color: #336688;
+    background: #none;
     border-top: 1px solid #666;
     border-bottom: 1px solid #666;
-    font-size: 1em;
-    padding: 5px;
+    font-size: 1.6rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
     text-align: center;
     width: 100%;
 }
@@ -164,9 +177,13 @@ article  {
 	overflow-y: auto;
 }
 
-p  {
+article > p  {
     position: relative;
     left: 10px;
+}
+
+p  {
+    padding: 0px 10px 0px 10px;
 }
 
 .collapsed  {
@@ -300,6 +317,150 @@ a:hover #copyright  {
     border-left: 5px dotted #dddddd;
     color: white;
     margin-left: 5px;
+}
+
+.comparison  {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+.compare_heading  {
+    position: relative;
+    width: 100%;
+    padding-top: 30px;
+    color: #333333;
+    font-size: 4rem;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.compare_list li  {
+    height: 18rem;
+    padding: 0;
+    margin: 0;
+    box-shadow: -2px 3px 4px #666666;
+}
+
+.compare_left  {
+    position: relative;
+    float: left;
+    height: auto;
+    width: 26%;
+    margin: 0;
+    margin-left: 4%;
+
+}
+
+.compare_center  {
+    position: relative;
+    float: left;
+    width: 25%;
+    margin: 5rem;
+    margin-left: 6%;
+    margin-right: 6%;
+    overflow: visible;
+    border: none;
+    background: none;
+}
+
+.compare_right  {
+    position: relative;
+    float: right;
+    height: auto;
+    width: 26%;
+    margin: 0;
+    margin-right: 6%;
+}
+
+.compare_win  {
+    width: 100%;
+    background: #B5F36D;
+    height: 18rem;
+}
+
+.compare_lose  {
+    width: 100%;
+    background: #FF9073;
+    height: 18rem;
+}
+
+.compare_draw  {
+    width: 100%;
+    background: #FFE373;
+    height: 18rem;
+}
+
+.arrow  {
+    position: relative;
+    background: #336688;
+    border: 4px solid #c2e1f5;
+    margin-top: 0rem;
+    margin-bottom: 10rem;
+    height: 8rem;
+    color: white;
+    vertical-align: middle;
+    box-shadow: -2px 3px 4px #666666;
+    padding-top: 2rem;
+    font-size: 2.6rem;
+    line-height: 3rem;
+
+    
+}
+
+
+.arrow_left:after, .arrow_left:before {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+
+}
+
+.arrow_left:after {
+    border-color: rgba(51, 102, 136, 0);
+    border-right-color: #336688;
+    border-width: 30px;
+    margin-top: -30px;
+
+}
+.arrow_left:before {
+    border-color: rgba(194, 225, 245, 0);
+    border-right-color: #c2e1f5;
+    border-width: 36px;
+    margin-top: -36px;
+
+}
+
+.arrow_right:after, .arrow_right:before {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.arrow_right:after {
+    border-color: rgba(51, 102, 136, 0);
+    border-left-color: #336688;
+    border-width: 30px;
+    margin-top: -30px;
+}
+.arrow_right:before {
+    border-color: rgba(194, 225, 245, 0);
+    border-left-color: #c2e1f5;
+    border-width: 36px;
+    margin-top: -36px;
 }
 
 @media screen and (max-width: 850px)  {
