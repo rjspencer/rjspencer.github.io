@@ -235,7 +235,8 @@ nav  {
 	padding: 10px;
 	padding-left: 0px;
     padding-bottom: 20px;
-	#border: 1px solid #999;
+    background: #fefeff;
+	border-bottom: 1px solid #999;
 	#border-bottom-right-radius: 10px;
 	#border-top-left-radius: 10px;
     min-height: 100px;
@@ -376,7 +377,6 @@ a:hover #copyright  {
     width: 26%;
     margin: 0;
     margin-right: 6%;
-    break: right;
 }
 
 .compare_win .compare_lose .compare_draw  {
