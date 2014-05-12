@@ -233,16 +233,20 @@ nav  {
     right: 10px;
 	width: 20%;
 	padding: 10px;
-	padding-left: 0px;
+	padding-left: 10px;
     padding-bottom: 20px;
     background: #fefeff;
-	border-bottom: 1px solid #999;
-	#border-bottom-right-radius: 10px;
-	#border-top-left-radius: 10px;
+	border: 1px solid #999;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
     min-height: 100px;
-    
-    
+    box-shadow: 0 2px 2px #999;
 }
+
+nav > h4 {
+    padding-left: -10px;
+}    
+
 
 .border-bottom  {
     background: url('../images/blueGrid.gif') repeat;
