@@ -18,14 +18,14 @@
                      
             
             $('.read_less').hide();
-            $('article').detach(); 
-            $('#social').after('<article></article>');
+            //$('article').detach(); 
+            //$('#social').after('<article></article>');
             $('nav').load(base_url+'/nav.txt');
             
             $('nav').click( function()  {
                 var post_url = '/' + window.location.hash.substring(1, window.location.hash.length);
                    
-                alert(post_url);
+                //alert(post_url);
 				$('article').load(base_url+post_url);
                 
 			});
