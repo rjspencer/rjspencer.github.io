@@ -68,7 +68,7 @@
         <h3>Optimizing your DB Queries<h3>
 
         <h4>SELECT Only What You Need</h4>
-        <span class="code">SELECT * FROM table</span>
+        <div class="code">SELECT * FROM table</div>
         <p>Never use <b>*</b> in a query.  Chances are you only need a few columns in any single query.  If you select all <b>*</b> columns in a table of 10 columns, but you really only needed 5 of those columns, you have doubled the amount of data your database needs to find and then transfer.</p>
 
         <h4>WHERE to Index</h4>
@@ -87,7 +87,7 @@
 
         <p>If you need to get information for 5 users, write one query that gets all 5 instead of a code loop that creates a new query for each user.</p>
 
-        SELECT username, zipcode FROM users WHERE id=1 OR id=2 OR id=3 OR id=4 OR id=5 
+        <div class="code">SELECT username, zipcode FROM users WHERE id=1 OR id=2 OR id=3 OR id=4 OR id=5 </div>
 
         <p>While using OR in a WHERE does slow down a query, it is still better than separate query transfers to and from the DB server.</p>
 
