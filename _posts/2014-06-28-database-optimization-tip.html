@@ -1,5 +1,4 @@
-<article>
-        <div class="collapsed post_text">
+     <div class="post_text">
         <h3>Optimizing your DB Queries<h3>
 
         <h4>SELECT Only What You Need</h4>
@@ -75,6 +74,3 @@
         <p>As you can see from the above table, with a maximum value of 255, using a TINYINT is probably a bad idea in most situations.  Many programmers will just create an INT because its easy, but is that always the right choice?  Imagine you are creating a CRM, Customer Relationship Management, system for the sales department of a regional landscaping company.  Right now they have a few dozen salepeople, some sales assistants and call center staff.  They need room for about 50 User_IDs.  If the company continues to grow it is feasible that they will need more than the 255 IDs that a TINYINT could provide, but would they ever really need the 4 billion IDs we get from an INT?  You can cut the size of one of your most requested database columns in half by using a SMALLINT and still have over 65 thousand unique IDs.  If the company grows larger than 65 thousand employees, they will have outgrown your program anyways.</p>
         <p>Whether you are storing numbers or text, check the documentation for your database and use the leanest data types you can while still leaving room for growth.</p>
     </div>
-        <span class="read_more">Read more...</span>
-        <span class="read_less">Read less...</span>
-</article>
