@@ -1,0 +1,101 @@
+<h3>Javascript vs Ruby</h3>
+	   <p>So who wins? There is no right answer.  Javascript has obvious benefits, but the web we know today requires passwords and databases.  These are the domain of server-side languages.</p>
+		<p>But Ruby can't do fast, dynamic page changes and asynchronous data transfer.  Web apps like Google Docs need the functionality of JavaScript.</p>
+		<p>What do we do?  Use both!  Web apps commonly combine JavaScript with server-side languages to create the feel of an installed application with all the magic of the cloud.</p>
+	</article>
+   <div class="comparison">
+	   <div class="compare_left">
+			<span class="compare_heading">JavaScript</span>
+			<ul class="compare_list">
+				<li class="compare_draw">
+					<h4>Client-side</h4>
+					<p>The original code is sent from the server to the user.  The user's computer then processes all of the code.</p>
+				</li>
+				<li class="compare_win">
+					<h4>Compatibility</h4>
+					<p>Servers just send JavaScript in plain text, so there are no compatibility issues.  From phones to tablets to computers and everything in between, virtually every web connected device has JavaScript built in automatically.</p>
+				</li>
+				<li class="compare_draw">
+					<h4>Code Complexity</h4>
+					<p>Javascript shares a similiar code structure with Ruby.  As with most popular modern languages, they are both Object Oriented.</p>
+				</li>
+				<li class="compare_lose">
+					<h4>Code Security</h4>
+					<p>The original JavaScript code is sent to the user.  This means anyone can see all of the code you have written.  They can easily steal it or search it for flaws.</p>
+				</li>
+				<li class="compare_lose">
+					<h4>Password Security</h4>
+					<p>Nothing in JavaScript is a secret, that includes passwords <em>see above</em>.</p>
+				</li>
+				<li class="compare_draw">
+					<h4>Speed - Loading</h4>
+					<p>It depends.  By having the user's computer handle the difficult processing, the server has less to process.  However, the server may now have to send more data or the user's computer may be slow.</p>
+				</li>
+				<li class="compare_win">
+					<h4>Speed - Page Changes</h4>
+					<p>JavaScript can change the user's page without ever contacting the server for fantastic speed.  Plus, with a technique called AJAX, JavaScript can speed things up by asking the server for just the part of the page that needs to change instead of the whole thing.</p>
+				</li>
+				<li class="compare_win">
+					<h4>DOM Manipulation</h4>
+					<p>The Document Object Model (DOM) is the map created by all of the HTML tags in a page.  JavaScript, and its partner jQuery, can change images, hide and show buttons, and create animations.</p>
+				</li>
+				
+			</ul>
+		</div>
+
+		<div class="compare_center">
+				<div class="arrow arrow_none">Where <br>It Runs</div>
+				<div class="arrow arrow_left">Server<br>Compatibility</div>
+				<div class="arrow">Code <br>Complexity</div>
+				<div class="arrow arrow_right">Code <br>Security</div>
+				<div class="arrow arrow_right">Password <br>Security</div>
+				<div class="arrow">Loading<br>Speed</div>
+				<div class="arrow arrow_left">Page Change<br>Speed</div>
+				<div class="arrow arrow_left">DOM<br>Manipulation</div>
+		</div>
+		<div class="compare_right">
+			<span class="compare_heading">Ruby</span>
+			<ul class="compare_list">
+				<li class="compare_draw">
+					<h4>Server-side</h4>
+					<p>The server processes the code and only sends the final product to the user.</p>
+				</li>
+				<li class="compare_draw">
+					<h4>Compatibility</h4>
+					<p>Ruby generates HTML that any web browser can use.  However, Ruby can be difficult to install on Windows servers and many shared hosting services do not currently support Ruby.  The good news is that the popularity of Ruby is resulting in improvement in support.</p>
+				</li>
+				<li class="compare_draw">
+					<h4>Code Complexity</h4>
+					<p>Ruby shares a similiar code structure with Javascript.  As with most popular modern languages, they are both Object Oriented.</p>
+				</li>
+				<li class="compare_win">
+					<h4>Code Security</h4>
+					<p>Ruby is run on the server and the user only receives finished HTML + CSS, removing the opportunity to steal code.  Users don't even need to know the page was created in Ruby.</p>
+				</li>
+				<li class="compare_win">
+					<h4>Password Security</h4>
+					<p>Everything in Ruby is a secret if you want it to be, and that includes passwords <em>see above</em>.</p>
+				</li>
+				<li class="compare_draw">
+					<h4>Speed - Loading</h4>
+					<p>It depends.  Servers are usually powerful machines and may process faster than a user's computer, even when multiple users are requesting pages at the same time.  Or not.</p>
+				</li>
+				<li class="compare_draw">
+					<h4>Speed - Page Changes</h4>
+					<p>Every time something on a page needs to change, Ruby needs to resend the whole HTML file, though images and CSS can be cached if they do not change.  Ruby is, however, faster than some server-side languages like PHP.</p>
+				</li>
+				<li class="compare_lose">
+					<h4>DOM Manipulation</h4>
+					<p>Ruby can only generate the original DOM with the HTML page.  It has no ability to manipulate it.</p>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+	<div style="clear: both;"></div>
+	
+	<h3>What about Node? </h3>
+	<p>Oh, shoot.  You had to bring that up, didn't you?</p>
+	<p><a href="http://nodejs.org" target="blank">Node.js</a> allows JavaScript to run server side.  Then, shouldn't we just code everything in JavaScript?</p>
+	<p>No.  Or not yet.  Since JavaScript only just gained the ability to run server side, there are very few libraries and frameworks designed for server-side tasks like database access and password encryption.  Do you really want to be the first person to try out a new password technique?</p>
+	<p>Common server side languages like PHP and Ruby have been around nearly as long as the web.  In these languages, the server-side functions have years of testing and security improvements behind them.  Plus, these languages have powerful frameworks to speed and enhance coding.  Some examples are Ruby on Rails and CakePHP.</p>
