@@ -1,0 +1,80 @@
+<article>
+        <div class="collapsed post_text">
+        <h3>Optimizing your DB Queries<h3>
+
+        <h4>SELECT Only What You Need</h4>
+        <div class="code">SELECT * FROM table</div>
+        <p>Never use <b>*</b> in a query.  Chances are you only need a few columns in any single query.  If you select all <b>*</b> columns in a table of 10 columns, but you really only needed 5 of those columns, you have doubled the amount of data your database needs to find and then transfer.</p>
+
+        <h4>WHERE to Index</h4>
+        <p>When setting up your tables, think about the information each column will contain.  Identify columns that are likely to be used as search values in queries and tell the database to index these columns for faster searching.</p>
+        <ul>
+          <li>Unique - Can be used to find a single entry like a username</li>
+          <li>Very Little Repetition - Used to quickly narrow down a list like names</li>
+          <li>Grouping - ZIP codes and dates ranges are great examples of easy ways to group entries</li>
+        </ul>
+        <h4>DRYQ - Don’t Repeat Your Queries</h4>
+
+        <p>Use cookie variables to save on database queries.  When your user logs in, there are several bits from the database that you will need over and over again during their session.  Some examples include names, location, account type, and interface preferences.  Imagine how much time and system resources you would waste if you looked up this information every time the users loads a new page.</p>
+
+
+        <h4>Reduce How Many Queries You Run</h4>
+
+        <p>If you need to get information for 5 users, write one query that gets all 5 instead of a code loop that creates a new query for each user.</p>
+
+        <div class="code">SELECT username, zipcode FROM users WHERE id=1 OR id=2 OR id=3 OR id=4 OR id=5 </div>
+
+        <p>While using OR in a WHERE does slow down a query, it is still better than separate query transfers to and from the DB server.</p>
+
+        <h4>Choose the Right Data Types for Smaller Data Transfers and Quicker Searches</h4>
+
+        <p>Use the smallest data type you can and your server will search faster and have less data to transfer.</p>
+
+        <p>When choosing data types, you need to balance potential future data needs with today’s desire to be fast and lean.  The Y2K issue was a great example of this.  Programmers in the 1970s and 1980s routinely created databases with only 2 digit years (84 instead of 1984).  As the year 2000 approached, there was a mad dash to update software with 2 digit years so that the year 2000 would not be treated as 00, because 00 is less than 84 whereas 2000 is greater than 1984.</p>
+
+        <p>Being realistic when choosing data types is important.  An UNSIGNED number is always positive, and therefore the can store higher numbers since the database doesn’t have to save room for negative values.  In MySQL for example, a TINYINT can store values from -128 to 127 while an UNSIGNED TINYINT can store values from 0 to 255.  As you can see, UNSIGNED values are the right choice for ID values.</p>
+
+        <p>What number data type is best for IDs? </p> 
+
+        <table>
+           <tr>
+             <td colspan="3">MySQL Unsigned Integer Data Types</td>
+          </tr>
+          <tr>
+            <td>Type</td>
+            <td>Size	</td>
+            <td>Max Value</td>
+          </tr>
+          <tr>
+              <td>TINYINT	</td>
+              <td>1 Byte	</td>
+              <td>255</td>
+          </tr>
+          <tr>      
+              <td>SMALLINT	</td>
+              <td>2 Bytes	</td>
+              <td>65,535</td>
+          </tr>
+          <tr>
+              <td>MEDIUMINT	</td>
+              <td>3 Bytes	</td>
+              <td>16,777,215</td>
+          </tr>
+          <tr>
+              <td>INT	</td>
+              <td>4 Bytes	</td>
+              <td>4,294,967,295</td>
+           </tr>
+          <tr>     
+              <td>BIGINT	</td>
+              <td>8 Bytes	</td>
+              <td>9,223,372,036,854,775,807</td>
+            </tr>
+          </table>
+
+        <p>As you can see from the above table, with a maximum value of 255, using a TINYINT is probably a bad idea in most situations.  Many programmers will just create an INT because its easy, but is that always the right choice?  Imagine you are creating a CRM, Customer Relationship Management, system for the sales department of a regional landscaping company.  Right now they have a few dozen salepeople, some sales assistants and call center staff.  They need room for about 50 User_IDs.  If the company continues to grow it is feasible that they will need more than the 255 IDs that a TINYINT could provide, but would they ever really need the 4 billion IDs we get from an INT?  You can cut the size of one of your most requested database columns in half by using a SMALLINT and still have over 65 thousand unique IDs.  If the company grows larger than 65 thousand employees, they will have outgrown your program anyways.</p>
+        <p>Whether you are storing numbers or text, check the documentation for your database and use the leanest data types you can while still leaving room for growth.</p>
+    </div>
+        <span class="read_more">Read more...</span>
+        <span class="read_less">Read less...</span>
+</article>
