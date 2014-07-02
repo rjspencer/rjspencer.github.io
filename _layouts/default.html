@@ -4,14 +4,26 @@
   {% include head.html %}
 
   <body>
+    <header>
+        <div id="logo">
+        R. J. Spencer
+        </div>
+	</header>
+    <div class="header_space"> </div>
+    <div id="social">
+        <a href="https://twitter.com/ryanjoelspencer" target="_blank">&#xf081;<!--twitter--></a>
+        <a href="http://google.com/+RyanSpencerPlus" target="_blank">&#xf0d4;<!--google+--></a>
+        <a href="https://github.com/rjspencer" target="_blank">&#xf09b;<!--github--></a>
+        <a href="mailto:rjspencer82@gmail.com">&#xf0e0;<!--mail--></a>
+    </div>
 
     <div class="container content">
-      <div class="masthead">
-        <h3 class="masthead-title">
+     <!-- <div class="masthead">
+        <h3 class="masthead-title"> -->
           <a href="{{ site.baseurl }}" title="Home">{{ site.title }}</a>
           <small>{{ site.tagline }}</small>
-        </h3>
-      </div>
+     <!--   </h3>
+      </div>-->
 
       {{ content }}
 
