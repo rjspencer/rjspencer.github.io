@@ -285,15 +285,12 @@ a:hover #copyright  {
 table {
 	margin:0px auto;
   padding:0px;
-	width:70%;
-	box-shadow: 10px 10px 5px #888888;
+	width:75%;
+	box-shadow: 7px 4px 5px #888888;
 	border:1px solid #000000;
 
   border-collapse: collapse;
   border-spacing: 0;
-	width:100%;
-	height:100%;
-	margin:0px;padding:0px;
 }
 tr:last-child td:last-child {
 	-moz-border-radius-bottomright:0px;
@@ -383,7 +380,7 @@ tr:first-child td:last-child{
   padding-left: 5rem;
 }
 .post-title {
-  margin-left: 3rem;
+  margin-left: -3rem;
 }
 
 #social a  {
