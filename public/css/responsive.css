@@ -157,7 +157,7 @@ header  {
     font-weight: bold;
     position: relative;
     top: .6em;
-    left: 50px;
+    left: 5rem;
     text-shadow: 0px 2px 2px #666;
 }
 
@@ -228,23 +228,14 @@ p  {
     
 }
 
-nav  {
-	position: fixed;
-	top: 60px;
-    right: 10px;
-	width: 20%;
-	padding: 10px;
-	padding-left: 10px;
-    padding-bottom: 20px;
-    background: #fefeff;
-	border: 1px solid #999;
-	border-bottom-left-radius: 10px;
-	border-top-left-radius: 10px;
-    min-height: 100px;
-    box-shadow: 0 2px 2px #999;
+#nav  {
+	position: relative;
+	top: .6rem;
+  left: 7rem;
+  color: #DDD;
 }
 
-nav > h4 {
+#nav > h4 {
     padding-left: -10px;
 }    
 

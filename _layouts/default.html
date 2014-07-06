@@ -6,7 +6,13 @@
   <body>
     <header>
         <div id="logo">
-        R. J. Spencer
+        <a href="/" title="Home">{{ site.title }}</a>
+        </div>
+        <div id="top_nav">
+          {% for page in site.pages_list %}
+          &nbsp;&nbsp;&nbsp;
+          <small><a href="{{ page[1]  }}">{{ page[0] }}</a></small>
+          {% endfor %}
         </div>
 	</header>
     <div class="header_space"> </div>
@@ -22,14 +28,6 @@
       
       {{ content }}
 
-      <nav>
-        <a href="/" title="Home">{{ site.title }}</a>
-
-        {% for page in site.pages_list %}
-        &nbsp;&nbsp;&nbsp;
-        <small><a href="{{ page[1]  }}">{{ page[0] }}</a></small>
-        {% endfor %}
-      </nav>
       <div class="footer">
         <p>
           &copy; {{ site.time | date: '%Y' }}. All rights reserved.
