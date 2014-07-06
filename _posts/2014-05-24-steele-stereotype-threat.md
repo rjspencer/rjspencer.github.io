@@ -5,7 +5,7 @@ title: Steele's Stereotype Threat
 
 Claude M. Steele has spent his life researching minority underachievement and developed a theory called "Stereotype Threat." Conduct your own research about stereotype threat. Identify times when you felt it. How did it affect your achievement? What questions did you ask yourself? Did you feel it physically? 
 
-"I am whatever you say I am.  If I wasn't, then why would I say I am?" - Eminem
+### "I am whatever you say I am.  If I wasn't, then why would I say I am?" - Eminem
 
 Claude M. Steele's "Stereotype Threat" is just a fancy way of saying your self image is a self-fulfilling prophecy.  Asian people are good at math.  Black people are good at sports.  White men can't jump.
 
