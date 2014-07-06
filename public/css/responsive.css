@@ -161,7 +161,7 @@ header  {
     text-shadow: 0px 2px 2px #666;
 }
 
-header > a {
+a #logo {
     color: #DDD;
 }
 
@@ -232,16 +232,16 @@ p  {
     
 }
 
-#nav  {
-	position: relative;
-	top: .6rem;
-  left: 7rem;
-  color: #DDD;
+#top_nav  {
+    position: relative;
+    top: .6rem;
+    left: 7rem;
+    color: #DDD;
 }
 
-#nav > h4 {
-    padding-left: -10px;
-}    
+a #top_nav  {
+    color: #ddd;
+} 
 
 
 .border-bottom  {
