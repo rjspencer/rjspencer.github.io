@@ -68,7 +68,9 @@ q:before, q:after {
 body  {
 	background: #fefeff;
     background-image: url('../images/blueGrid.gif') repeat-y;
-	font-family: arial, sans-serif;
+	font-family: "prenton",sans-serif;
+  font-style: normal;
+  font-weight: 400;
 	font-size: 1.4rem;
 	color: charcoal;
 }
@@ -92,13 +94,11 @@ a:hover  {
 h3  {
     color: #336688;
     font-size: 1.8rem;
-    font-family: 'Cinzel', serif;
 }
 
 h4  {
-    font-family: 'Cinzel', serif;
     color: #000;
-    background: #ddd;
+    background: #eee;
     border-bottom: 1px solid #555;
     font-size: 1.6rem;
     padding-top: .75rem;
@@ -117,7 +117,7 @@ h4  {
         background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.75) 100%), url('http://crispycatfish.com/pyro/assets/images/classy_fabric.png') repeat; /* IE10+ */
         background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.75) 100%), url('http://crispycatfish.com/pyro/assets/images/classy_fabric.png') repeat; /* W3C */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#bf000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-    color: #DDD;
+    color: #eee;
     position: fixed;
     z-index: 50;
     top: 0px;
@@ -131,7 +131,7 @@ h4  {
 .header_space  {
     position: static;
     width: 100%;
-    height: 58px;
+    height: 80px;
 }
 
 .scrolled  {
@@ -157,7 +157,6 @@ h4  {
     z-index: 60;
     color: white !important;
     font-size: 4rem;
-    font-weight: 300 !important;
     line-height: 5rem;
     position: relative;
     top: .5rem;
@@ -166,20 +165,10 @@ h4  {
 }
 
 #logo a h1 {
-    color: white;
-    font-family: 'Raleway', serif;
-    font-weight: 300 !important;
-}
-
-article  {
-	position: static;
-    width: 70%;
-	border: 5 px solid #666;
-	padding-top: 10px;
-	padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 10px;
-	overflow: hidden;
+    color: #eee;
+    font-family: "p22-underground-pc",sans-serif;
+    font-style: normal;
+    font-weight: 300;
 }
 
 .post_text  {
@@ -188,35 +177,8 @@ article  {
 	overflow-y: auto;
 }
 
-article > p  {
-    position: relative;
-    left: 10px;
-}
-
 p  {
     padding: 0px 10px 0px 10px;
-}
-
-.collapsed  {
-	min-height: 200px;
-	height: 200px;
-	overflow: hidden;
-}
-
-.read_more  {
-	position: relative;
-	bottom: -10px;
-	left: 10px;
-	color: #336688;
-
-}
-
-.read_less  {
-	position: relative;
-	bottom: -10px;
-	left: 10px;
-	color: #336688;
-	
 }
 
 .imgbox  {
@@ -231,7 +193,7 @@ p  {
     bottom: 50px;
     background: #333;
     border: 1px solid #999;
-    color: #DDD;
+    color: #eee;
     height: 20px;
     min-width: 120px;
     padding: 5px;
@@ -264,7 +226,7 @@ p  {
     margin: 10px;
 }
 #top_nav a:hover  {
-  color: #ddd;
+  color: #eee;
   
 }
 
@@ -399,6 +361,10 @@ tr:first-child td:last-child{
   padding-left: 5rem;
 }
 .post-title {
+  font-family: "p22-underground-pc",sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  
   margin-left: -8rem;
   padding: 2rem;
   padding-right: 6rem;
@@ -413,7 +379,7 @@ tr:first-child td:last-child{
   -webkit-border-bottom-right-radius: 4rem;
 }
 .post-title a {
-  color: #ddd;
+  color: #eee;
 }
 
 #social a  {
@@ -423,7 +389,7 @@ tr:first-child td:last-child{
 
 #social a:hover  {
     text-shadow: 1px 1px 8px #f09811;
-    color: #ddd;
+    color: #eee;
     top: 12px;
 }
 
@@ -443,7 +409,7 @@ tr:first-child td:last-child{
 .code  {
     background: #333;
     padding: 20px;
-    border-left: 5px dotted #dddddd;
+    border-left: 5px dotted #eeeeee;
     color: white;
     margin-left: 5px;
 }
