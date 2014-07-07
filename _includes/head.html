@@ -30,7 +30,11 @@
           $('header').removeClass('scrolled');
           $('#social').removeClass('scrolled');
         }
-      });          
+      });
+      $("a").attr("target", function() {
+          if (this.host == location.host) return "_self"
+          else return "_blank"; 
+      });
 		});
 	</script>
   <!-- Icons -->

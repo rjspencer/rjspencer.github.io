@@ -167,7 +167,7 @@ h4  {
 
 #logo a h1 {
     color: white;
-    font-family: "p22-underground-pc", serif;
+    font-family: "Raleway", serif;
     font-weight: 300 !important;
 }
 
@@ -239,7 +239,6 @@ p  {
 }
 
 #top_nav  {
-    position: relative;
     bottom: 10px;
     left: 0px;
     width: 100%;
