@@ -253,7 +253,7 @@ p  {
 }    
 #top_nav li:hover  {
     border-bottom: 2px solid #899;
-    color: #bbb;
+    color: #FFFDF1;
 }
 #top_nav a  {
     color: #333;
@@ -263,7 +263,10 @@ p  {
     padding: 10px;
     margin: 10px;
 }
-
+#top_nav a:hover  {
+  color: #ddd;
+  
+}
 
 .border-bottom  {
     background: url('../images/blueGrid.gif') repeat;
@@ -408,6 +411,9 @@ tr:first-child td:last-child{
 
   -webkit-border-top-right-radius: 4rem;
   -webkit-border-bottom-right-radius: 4rem;
+}
+.post-title a {
+  color: #ddd;
 }
 
 #social a  {
