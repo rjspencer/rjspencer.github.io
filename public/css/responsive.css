@@ -156,9 +156,9 @@ h4  {
 #logo  {
     z-index: 60;
     color: white !important;
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 300 !important;
-    line-height: 2rem;
+    line-height: 5rem;
     position: relative;
     top: .5rem;
     left: 3rem;
@@ -167,7 +167,7 @@ h4  {
 
 #logo a h1 {
     color: white;
-    font-family: "Raleway", serif;
+    font-family: 'Raleway', serif;
     font-weight: 300 !important;
 }
 
@@ -396,7 +396,7 @@ tr:first-child td:last-child{
   padding-left: 5rem;
 }
 .post-title {
-  margin-left: -3rem;
+  margin-left: -8rem;
   padding: 2rem;
   padding-right: 6rem;
   padding-left: 6rem;
