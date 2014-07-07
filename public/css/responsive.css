@@ -240,8 +240,8 @@ p  {
 
 #top_nav  {
     width: 100%;
-    padding: 0px;
-    padding-left: 20px;
+    padding: 1rem;
+    padding-left: 3rem;
     color: #333;
     background: #53B5CE;
     border: 0px;
@@ -253,7 +253,7 @@ p  {
 }    
 #top_nav li:hover  {
     border-bottom: 2px solid #899;
-    color: #FFFDF1;
+    color: #bbb;
 }
 #top_nav a  {
     color: #333;
