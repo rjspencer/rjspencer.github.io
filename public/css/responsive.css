@@ -365,7 +365,7 @@ tr:first-child td:last-child{
 
 .container {
   padding-left: 5rem;
-  min-height: 500px;
+  height: 500px;
 }
 .post-title {
   font-family: "p22-underground-pc",sans-serif;
