@@ -37,8 +37,12 @@
           if (this.host == location.host) return "_self"
           else return "_blank"; 
       });
-      
-      $(".code").snippet("ruby");
+      $(todo-list).change(function() {
+        $("pre.htmlcssCode").snippet("html");
+        $("pre.jsCode").snippet("javascript_dom");
+        $("pre.rubyCode").snippet("ruby");
+        $("pre.phpCode").snippet("php");
+      });
 		});
 	</script>
   <!-- Icons -->
