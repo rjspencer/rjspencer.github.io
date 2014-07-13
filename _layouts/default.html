@@ -25,8 +25,8 @@
       {{ content }}
       </div>  
       <div id="side_content">
-        {% include code_resource_links.md %}
-        <pre class="code">{% include code_syntax_basics.md %}</pre>
+        {% include code_resource_links.md | markdownify %}
+        <pre class="code">{% include code_syntax_basics.md | markdownify %}</pre>
     </div>
     <div id="footer">
       <p>
