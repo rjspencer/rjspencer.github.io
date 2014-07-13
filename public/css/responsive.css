@@ -311,11 +311,14 @@ tr:first-child td:last-child{
   padding-left: 5rem;
   min-height: 500px;
 }
-#content
+#content {
   width: 65%;
 }
+
 #side_content  {
   width: 30%;
+  background: #ccc;
+  box-shadow: inset 3px 0px 8px #888888;
 }
 .post-title {
   font-family: "p22-underground-pc",sans-serif;
