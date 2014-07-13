@@ -25,7 +25,7 @@
   <script>
     $(document).ready(function(){
       $('.show_code').click( function()  {
-      $(this).parent().parent().children('.code').toggleClass('hidden');
+      $(this).parent().parent().children('.code, .rubyCode, .htmlcssCode, .jsCode, .phpCode').toggleClass('hidden');
       });
       $(window).scroll(function() {
         if($(window).scrollTop() > 0) {

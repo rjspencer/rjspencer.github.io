@@ -313,6 +313,8 @@ tr:first-child td:last-child{
   width: 30%;
   top: 60px;
   right: 0px;
+  padding-top: 10px;
+  overflow-x: hidden;
   background: #ccc;
   box-shadow: inset 8px 0px 6px -6px #333333;
   z-index: 1;
