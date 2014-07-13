@@ -1,6 +1,5 @@
 #Code Syntax Basics
 ##RUBY
-{% highlight ruby linenos %}
 ###FOR
 for i in 1..1000
    puts i if i % 7==0
@@ -47,8 +46,7 @@ hash = {}
 hash = { 1=>"Alaska", "blue"=>"orange", "The answer to life"=>42, -100=>200 }
 hash.default = "default value" // if you call the Hash on a symbol that does not exist, the default will return
 hash.[new_key] = "New value" // add a new key/pair to hash
-{% end highlight %}
-{% highlight javascript linenos %}
+
 ##JAVASCRIPT
 ###VARIABLES
 Must be declared or they become global.
@@ -115,4 +113,3 @@ object === {1: "Alaska", blue: orange", The answer to life: 42, -100: 200, new_k
 
 ###DOM MANIPULATION 
 onclick="document.getElementById('#id').style.color = 'red'"
-{% end highlight %}
