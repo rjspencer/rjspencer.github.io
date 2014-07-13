@@ -25,7 +25,7 @@
   <script>
     $(document).ready(function(){
       $('.show_code').click( function()  {
-      $(this).parent().parent().children('.code, .rubyCode, .htmlcssCode, .jsCode, .phpCode').toggleClass('hidden');
+      $(this).parent().parent().children('.code').toggleClass('hidden');
       });
       $(window).scroll(function() {
         if($(window).scrollTop() > 0) {
@@ -40,7 +40,7 @@
           if (this.host == location.host) return "_self"
           else return "_blank"; 
       });
-      $(code-list).change(function() {
+      $('.code').change(function() {
         $("pre.htmlcssCode").snippet("html");
         $("pre.jsCode").snippet("javascript_dom");
         $("pre.rubyCode").snippet("ruby");
