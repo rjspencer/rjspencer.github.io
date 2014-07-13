@@ -24,6 +24,9 @@
   <script type="text/javascript" src="{{ site.baseurl }}public/js/jquery.snippet.min.js"></script>
   <script>
     $(document).ready(function(){
+      $('.show_code').click( function()  {
+      $(this).parent().parent().children('.code').toggleClass('hidden');
+      });
       $(window).scroll(function() {
         if($(window).scrollTop() > 0) {
           $('#logo').addClass('scrolled');
@@ -37,7 +40,7 @@
           if (this.host == location.host) return "_self"
           else return "_blank"; 
       });
-      $(todo-list).change(function() {
+      $(code-list).change(function() {
         $("pre.htmlcssCode").snippet("html");
         $("pre.jsCode").snippet("javascript_dom");
         $("pre.rubyCode").snippet("ruby");
@@ -48,7 +51,6 @@
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}public/apple-touch-icon-precomposed.png">
   <link rel="shortcut icon" href="{{ site.baseurl }}public/favicon.ico">
-
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.baseurl }}atom.xml">
 </head>
