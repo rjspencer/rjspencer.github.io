@@ -22,16 +22,16 @@
         <a href="mailto:rjspencer82@gmail.com">&#xf0e0;<!--mail--></a>
     </div>
     
-    <div class="container">
-            
+    <div id="container">
+      <div id="content">      
       {{ content }}
+      </div>  
       <div id="side_content"> </div>
-      <div class="footer">
-        <p>
-          &copy; {{ site.time | date: '%Y' }}. All rights reserved.
-        </p>
-      </div>
     </div>
-
+    <div id="footer">
+      <p>
+        &copy; {{ site.time | date: '%Y' }}. All rights reserved.
+      </p>
+    </div>
   </body>
 </html>

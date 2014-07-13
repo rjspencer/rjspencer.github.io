@@ -224,16 +224,6 @@ p  {
   color: #f9f9ff;
 }
 
-.border-bottom  {
-    background: url('../images/blueGrid.gif') repeat;
-    background-size: 18px 18px;
-    height: 18px;
-    width: 100%;
-    border: 1px solid #336688;
-    border-radius 8px;
-    box-shadow: 0 2px 2px #999;
-}
-
 .sidebox_link  {
     clear: both;
 }
@@ -317,18 +307,15 @@ tr:first-child td:last-child{
 	border-width:0px 0px 1px 1px;
 }
 
-#social  {
-    font-family: FontAwesome;
-    font-size: 2.5em;
-    position: fixed;
-    top: 10px;
-    right: 30px;
-    z-index: 70; 
-}
-
-.container {
+#container {
   padding-left: 5rem;
-  height: 500px;
+  min-height: 500px;
+}
+#content
+  width: 65%;
+}
+#side_content  {
+  width: 30%;
 }
 .post-title {
   font-family: "p22-underground-pc",sans-serif;
@@ -350,6 +337,15 @@ tr:first-child td:last-child{
 }
 .post-title a {
   color: #f9f9ff;
+}
+
+#social  {
+    font-family: FontAwesome;
+    font-size: 2.5em;
+    position: fixed;
+    top: 10px;
+    right: 30px;
+    z-index: 70; 
 }
 
 #social a  {
@@ -530,7 +526,7 @@ tr:first-child td:last-child{
 }
 
 @media screen and (max-width: 850px)  {
-    nav  {
+    #top_nav  {
         width: 95%;
         margin: 0 auto;
         position: relative;
@@ -539,8 +535,8 @@ tr:first-child td:last-child{
         border-radius: 0;
         box-shadow: none;
     }
-    article  {
-        width: 95%;
+    .container  {
+        width: 75%;
         margin: 0 auto;
         padding: 0px;
         padding-bottom: 10px;
