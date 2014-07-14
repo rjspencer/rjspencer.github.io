@@ -43,9 +43,14 @@ array[2] === -1200
 array[-2] === "cat"
 
 hash = {}
-hash = { 1=>"Alaska", "blue"=>"orange", "The answer to life"=>42, -100=>200 }
-hash.default = "default value" // if you call the Hash on a symbol that does not exist, the default will return
-hash.[new_key] = "New value" // add a new key/pair to hash
+hash = { 
+  1=>"Alaska", 
+  "blue"=>"orange", 
+  "The answer to life"=>42, 
+  -100=>200 
+}
+hash.default = "default value" 
+hash.[new_key] = "New value" 
 
 ##JAVASCRIPT
 ###VARIABLES
@@ -59,7 +64,7 @@ var x5 = [];           // new array object
 var	x6 = /()/          // new regexp object
 var x7 = function(){}; // new function object
 
-var x, y, z=3; // Declare multiple variables on one line. 
+var x, y, z=3; // Declare multiple variables 
 
 ###LOOP BREAK
 break;
@@ -107,9 +112,17 @@ array[-2] === "cat";
 
 Objects are similiar to Ruby Hashes, but cannot be accessed by index[num]
 var object = {};
-var object = { 1: "Alaska", blue: orange", "The answer to life": 42, -100: 200 }; // key becomes a symbol with or without ''
+var object = { 
+   1: "Alaska", 
+   blue: orange", 
+   "The answer to life": 42, 
+   -100: 200 
+}; 
+// key becomes a symbol with or without ''
+
+//Add to hash
 object["new_key"] = "New Value";
-object === {1: "Alaska", blue: orange", The answer to life: 42, -100: 200, new_key: "New Value" };
+
 
 ###DOM MANIPULATION 
 onclick="document.getElementById('#id').style.color = 'red'"

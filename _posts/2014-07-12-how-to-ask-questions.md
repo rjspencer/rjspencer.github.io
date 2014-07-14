@@ -1,3 +1,8 @@
+---
+layout: post
+title: How to Ask Questions
+---
+
 # How to Ask Questions
 It seems like a silly statement, you've been asking questions your whole life.  Are you sure you have been asking them the right way?
 
