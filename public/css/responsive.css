@@ -320,6 +320,9 @@ tr:first-child td:last-child{
   box-shadow: inset 8px 0px 6px -6px #333333;
   z-index: 1;
 }
+#side_content a {
+  color: black;
+}
 
 .post-title {
   font-family: "p22-underground-pc",sans-serif;
