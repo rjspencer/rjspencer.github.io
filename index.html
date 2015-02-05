@@ -4,10 +4,12 @@ title: Home
 ---
 
 <h1>Recent Projects</h1>
-<ul>
-  <li><a href="sky-cast.herokuapp.com" target="_blank">Angular Weather:</a> uses geolocation and weather apis to display your weather forecast <em>ruby/sinatra api, angular front-end</em></li>
-  <li><a href="rubypayroll.herokuapp.com" target="_blank">RubyPayroll:</a> create & track paychecks, create reports based on tax forms <em>ruby/sinatra</em></li>
-<\ul>
+<div>
+  <a href="sky-cast.herokuapp.com" target="_blank"><h3>Angular.js Weather:</h3></a> uses geolocation and weather apis to display your weather forecast <em>ruby/sinatra api, angular front-end</em>
+</div>
+<div>
+  <a href="rubypayroll.herokuapp.com" target="_blank"><h3>RubyPayroll:</h3></a> create & track paychecks, create reports based on tax forms <em>ruby/sinatra</em>
+<\div>
 <div class="pagination">
   {% if paginator.next_page %}
     <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
