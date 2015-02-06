@@ -557,11 +557,6 @@ tr:first-child td:last-child{
         top: 80px;
 
     }
-    
-}
-
-@media screen and (max-width: 650px)  {
-
     #social  {
         position: static;
         color: #FF3500;
@@ -596,15 +591,3 @@ tr:first-child td:last-child{
     }
 
 }
-
-@media screen and (max-width: 480px)  {
-    img  {
-        float: center;
-        clear: both;
-        max-width: 90%;
-        height: auto;
-    }
-
-}
-
-
