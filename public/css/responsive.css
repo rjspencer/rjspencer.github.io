@@ -481,7 +481,6 @@ tr:first-child td:last-child{
 
 }
 
-
 .arrow_left:after, .arrow_left:before {
     right: 100%;
     top: 50%;
@@ -574,7 +573,10 @@ tr:first-child td:last-child{
     }
     
     img  {
+        float: center;
+        clear: both;
         max-width: 90%;
+        height: auto;
     }
     .collapsed  {
         min-height: 150px;
