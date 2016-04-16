@@ -14,43 +14,31 @@
   </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}public/css/jquery.snippet.css"> 
-  <link rel="stylesheet" href="{{ site.baseurl }}public/css/responsive.css">
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ site.baseurl }}public/css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,500' rel='stylesheet' type='text/css'>
+
   <!-- JavaScript  -->
-  <script type="text/javascript" src="//use.typekit.net/axh5qfg.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script type="text/javascript" src="{{ site.baseurl }}public/js/jquery.snippet.min.js"></script>
   <script>
-    $(document).ready(function(){
-      $('.show_code').click( function()  {
-      $(this).parent().parent().children('.code').toggleClass('hidden');
+  var material = false;
+  var body = document.getElementsByTagName('body')[0];
+
+  document.addEventListener("DOMContentLoaded", function(event) {
+      console.log("DOM fully loaded and parsed");
+      document.getElementById("style-toggle").addEventListener("click", function() {
+          console.log("toggle");
+          if(!material) {
+              body.className = "material"
+              material = true;
+          } else {
+              body.className = "";
+              material = false;
+          }
       });
-      $(window).scroll(function() {
-        if($(window).scrollTop() > 0) {
-          $('#logo').addClass('scrolled');
-          $('#social').addClass('scrolled');
-        } else {
-          $('#logo').removeClass('scrolled');
-          $('#social').removeClass('scrolled');
-        }
-      });
-      $("a").attr("target", function() {
-          if (this.host == location.host) return "_self"
-          else return "_blank"; 
-      });
-      $('.code').change(function() {
-        $("pre.htmlcssCode").snippet("html");
-        $("pre.jsCode").snippet("javascript_dom");
-        $("pre.rubyCode").snippet("ruby");
-        $("pre.phpCode").snippet("php");
-      });
-		});
-	</script>
+  });
+  </script>
+
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}public/apple-touch-icon-precomposed.png">
   <link rel="shortcut icon" href="{{ site.baseurl }}public/favicon.ico">
-  <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.baseurl }}atom.xml">
+
 </head>
