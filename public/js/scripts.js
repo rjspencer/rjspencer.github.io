@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         var popup = thumb.parentNode.getElementsByClassName('popup')[0];
 
         thumb.addEventListener("click", function() {
-            popup = this.parentNode.getElementsByClassName('popup')[0];
+            var popup = this.parentNode.getElementsByClassName('popup')[0];
             popup.className = "popup active";
         });
         popup.addEventListener("click", function() {
