@@ -205,20 +205,28 @@ portfolio img.popup {
     cursor: pointer;
     position: fixed;
     opacity: 0;
-    left: -200%;
+    left: -100%;
     top: 2rem;
     width: 70%;
-    transform: rotate(1080deg);
-    transition: all ease .3s;
-    transition: opacity ease .9s;
+    transition: all ease .3s, opacity ease .9s;
     z-index: 100;
 }
 portfolio img.popup.active {
     left: 15%;
-    transform: rotate(0deg);
+    transform: rotate(1080deg);
     opacity: 1;
     border: 20px solid white;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+portfolio img.popup.active:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255,0.4);
 }
 
 skills, jobs, projects {
