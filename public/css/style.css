@@ -203,9 +203,10 @@ portfolio img.thumb {
 }
 portfolio img.popup {
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     opacity: 0;
     left: -200%;
+    top: 2rem;
     width: 70%;
     transform: rotate(1080deg);
     transition: all ease .3s;
