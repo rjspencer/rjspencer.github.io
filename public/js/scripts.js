@@ -13,4 +13,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
             material = false;
         }
     });
+
+    var thumbs = document.getElementsByClassName('thumb');
+
+    for(var i = 0; i < thumbs.length; i++) {
+        var thumb = thumbs[i];
+        var popup = thumb.parentNode.getElementsByClassName('popup')[0];
+
+        console.log(thumb, popup);
+        thumb.addEventListener("click", function() {
+            popup.className = "popup active";
+        });
+        popup.addEventListener("click", function() {
+            popup.className = "popup";
+        });
+    }
 });
