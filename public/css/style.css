@@ -211,6 +211,7 @@ portfolio img.popup {
     transform: rotate(1080deg);
     transition: all ease .3s;
     transition: opacity ease .9s;
+    z-index: 100;
 }
 portfolio img.popup.active {
     left: 15%;
