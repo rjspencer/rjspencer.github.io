@@ -23,6 +23,7 @@
       console.log("DOM fully loaded and parsed");
       var material = false;
       var body = document.getElementsByTagName('body')[0];
+      var curtain = document.getElementsByTagName('curtain')[0];
 
       document.getElementById("style-toggle").addEventListener("click", function() {
           console.log("toggle");
@@ -44,9 +45,11 @@
           thumb.addEventListener("click", function() {
               var popup = this.parentNode.getElementsByClassName('popup')[0];
               popup.className = "popup active";
+              curtain.className = "on";
           });
           popup.addEventListener("click", function() {
               this.className = "popup";
+              curtain.className = "";
           });
       }
   });

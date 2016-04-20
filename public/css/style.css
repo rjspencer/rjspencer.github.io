@@ -36,6 +36,22 @@ li b, li strong {
     font-size: 1.5rem;
 }
 
+curtain {
+    transition: all ease .3s;
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 100%;
+    left: 100%;
+    background: rgba(255,255,255,0.5);
+    z-index: 50;
+}
+
+curtain .on {
+    bottom: 0;
+    left: 0;
+}
+
 contact {
     background-color: rgba(0,0,0,0.1);
     padding: 2rem;
