@@ -210,7 +210,7 @@ description a {
     display: inline-block;
     padding-bottom: 0;
 }
-description a:after {
+description a:before {
     content: "";
     display: block;
     position: absolute;
@@ -221,7 +221,7 @@ description a:after {
     background: #efefef;
     transition: all ease-out 0.2s;
 }
-description a:hover:after {
+description a:hover:before {
     width: 100%;
 }
 
