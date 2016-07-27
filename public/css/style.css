@@ -81,7 +81,7 @@ contact a, contact a:visited {
 }
 
 .material contact a, .material contact a:visited {
-    color: #fff;]
+    color: #fff;
 }
 
 heading {
@@ -199,6 +199,30 @@ icon svg {
 }
 .material projects {
     background-color: rgba( 57,169, 15,0.05);
+}
+
+description a {
+    position: relative;
+    text-decoration: none;
+    border-bottom: 3px solid #efefef;
+    transition: all ease .2s;
+    margin-bottom: 1rem;
+    display: inline-block;
+    padding-bottom: 0;
+}
+description a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    background: #efefef;
+    transition: all ease-out 0.2s;
+}
+description a:hover:after {
+    width: 100%;
 }
 
 portfolio flexdeck {
